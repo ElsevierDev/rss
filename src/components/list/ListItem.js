@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import Feed from '../../lib/rss/feed';
+import Feed from '../../lib/feeds/feed';
 import { useFeedsList } from '../../hooks/rssFeeds';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSync, faTrashAlt, faBolt } from '@fortawesome/free-solid-svg-icons';

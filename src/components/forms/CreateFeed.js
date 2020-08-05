@@ -14,7 +14,7 @@ export default () => {
         <div className="col">
             <div className="panel panel-primary">
                 <div className="panel-heading">
-                    <h3>Create Scopus API-based RSS feed</h3>
+                    <h3>Create Scopus API-based feed</h3>
                 </div>
                 <div className="panel-body">
                     <div className="row">
@@ -33,7 +33,7 @@ export default () => {
                             <div className="form-group">
                                 <input type="button"
                                        className="btn btn-primary pull-right"
-                                       value="Create RSS Feed"
+                                       value="Create API Feed"
                                        onClick={createButtonHandler}
                                 />
                             </div>

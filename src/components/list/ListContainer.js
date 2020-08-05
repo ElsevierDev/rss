@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { useFeedsList } from '../../hooks/rssFeeds';
-import Feed from '../../lib/rss/feed';
+import Feed from '../../lib/feeds/feed';
 
 import ListItem from './ListItem';
 

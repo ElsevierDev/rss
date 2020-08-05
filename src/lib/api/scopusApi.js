@@ -20,7 +20,7 @@ export default class ScopusApi {
 
     static PATH_DOCUMENT_SEARCH = 'content/search/scopus';
 
-    constructor(uri, apiKey = '') {
+    constructor(uri, apiKey = '', queryExtraParams = {}) {
 
         this.baseUrl = new URL(this.constructor.SCOPUS_URL + uri);
 
@@ -28,6 +28,8 @@ export default class ScopusApi {
             'X-ELS-APIKey': apiKey,
             'Accept': 'application/json'
         };
+
+        this.queryExtraParams = queryExtraParams;
 
         this.resultParser = result => result;
     }
@@ -78,7 +80,7 @@ export default class ScopusApi {
      * @returns {string}
      */
     getQueryUrl(params) {
-        this.baseUrl.search = new URLSearchParams(params).toString();
+        this.baseUrl.search = new URLSearchParams({...this.queryExtraParams, ...params}).toString();
         return this.baseUrl.toString();
     }
 }

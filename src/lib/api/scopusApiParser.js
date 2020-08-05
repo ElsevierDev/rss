@@ -14,7 +14,7 @@ const findScopusUrl = (link) => {
 }
 
 /**
- * Function parse response from Scopus search api and create structure we intend to use for RSS feed
+ * Function parse response from Scopus search api and create structure we intend to use for feed
  * @param response {json} response from Scopus search api.
  * @returns {[]} - list of search elements.
  */

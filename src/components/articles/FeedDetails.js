@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import FeedDateBlock from './FeedDateBlock';
-import Feed from '../../lib/rss/feed';
+import Feed from '../../lib/feeds/feed';
 
 /**
  * Component displays details of specific Feed

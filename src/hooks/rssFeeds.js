@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import feedsController from '../lib/rss';
+import feedsController from '../lib/apiFeeds';
 
 /**
  * Hook controles list of feeds, provide functions to create and remove feeds

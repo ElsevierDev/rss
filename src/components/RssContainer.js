@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ListContainer from './list/ListContainer';
-import FeedDetails from './details/FeedDetails';
+import FeedDetails from './articles/FeedDetails';
 import AutoSync from './forms/AutoSync';
 
 export default () => {

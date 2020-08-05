@@ -1,4 +1,5 @@
 {
   "API_KEY": "[ENTER KEY HERE]",
+  "updateTimeout": 20000,
   "storeName": "RssFeeds"
 }
